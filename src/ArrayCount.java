@@ -4,7 +4,6 @@ public class ArrayCount
    public static void main(String args[])
    {
 	   Scanner in = new Scanner(System.in);
-	   System.out.println("ENTER A VALUES IN ARRAY :");
 	   int m[] = new int[10];
 	   int c=0;
 	   int n;
@@ -13,9 +12,10 @@ public class ArrayCount
 	  
 	   for(i=0;i<10;i++)
 	   {
+		   System.out.print("ENTER "+i+ " VALUES IN ARRAY :");
 		 m[i] = in.nextInt();   
 	   }
-	      
+	   
 	   for(i=0;i<10;i++)
 	   {
 		 while(m[i]!=0)
@@ -31,11 +31,8 @@ public class ArrayCount
           		 tde++;
           	 }
            }
-	   }
 	   
-	   for(i=0;i<10;i++)
-	   {
-		 while(m[i]!=0)
+	 while(m[i]!=0)
 		 {
 		  n=m[i]/10;
           c=0;
@@ -48,9 +45,7 @@ public class ArrayCount
           		 tdo++;
           	 }
            }
-	   }
-	   for(i=0;i<10;i++)
-	   {
+	   
 		   if(m[i]>50)
 		   {
 		     if((m[i]%2)==0)
@@ -58,9 +53,8 @@ public class ArrayCount
           		 s=s+m[i];
           	 }
 		   }
-       }
-	   for(i=0;i<10;i++)
-	   {
+       
+	   
 		 while(m[i]!=0)
 		 {
 		  n=m[i]/10;
