@@ -1,3 +1,8 @@
+/*to take two numbers as input then count number of evens present within those two numbers
+ *  where display will be done in main() method
+ * Using following method prototype:
+ *   int evenCount()
+ */
 import java.util.*;
 public class EvenCount
 {

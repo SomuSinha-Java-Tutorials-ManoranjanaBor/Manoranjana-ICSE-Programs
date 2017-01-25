@@ -1,3 +1,10 @@
+/*WAP to create an array of 30 elements then count and display the following :
+ * (a) Number of two digit even.
+ * (b) Number of three digit odd.
+ * (c) sum of all evens above 50.
+ * (d) product of all single digit numbers.
+ *   
+ */
 import java.util.*;
 public class ArrayCount
 {
