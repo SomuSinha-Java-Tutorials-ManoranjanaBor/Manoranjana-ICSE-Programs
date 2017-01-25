@@ -9,7 +9,6 @@ public class SumOfDigit
     		d = a % 10 ;
     		s=s+d;
     		a=a/10;
-    		a++;
     	}
     	return s;
     }
