@@ -23,6 +23,7 @@ public class ArrayCount
 		  n=m[i]/10;
 		   c=0;
 		  c++;
+		  n++;
 		 }
            if(c==2)
            {
@@ -37,6 +38,7 @@ public class ArrayCount
 		  n=m[i]/10;
           c=0;
 		  c++;
+		  n++;
 		 }
            if(c==3)
            {
@@ -60,6 +62,7 @@ public class ArrayCount
 		  n=m[i]/10;
 		   c=0;
 		  c++;
+		  n++;
 		 }
            if(c==1)
            {
