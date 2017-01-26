@@ -52,7 +52,7 @@ public class ArrayCount
 	   }
 	   for(i=0;i<10;i++)
 	   {
-		   if(m[i]>50)
+		   if((m[i]>50)&&((m[i]%2)==0))
 		   {
 			   s=s+m[i];
 		   }
