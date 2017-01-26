@@ -28,8 +28,9 @@ public class EvenCount
 		int i;
 		for(i=m;i<=n;i++)
 		{
-			evenCount(m,n);			
+					
 		}
+		evenCount(m,n);	
 		
 	}
 }
