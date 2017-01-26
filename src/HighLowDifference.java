@@ -5,7 +5,7 @@
 import java.util.*;
 public class HighLowDifference 
 {
-		int a,b,c,i,j,t;
+		int a,b,c;
 		static int diff;
 		HighLowDifference(int p,int q,int r)
 		{
