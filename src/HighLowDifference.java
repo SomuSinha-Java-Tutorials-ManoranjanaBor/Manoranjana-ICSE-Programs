@@ -1,3 +1,7 @@
+/*
+ * WAP to take three numbers as input then display the difference between highest and lowest number.
+ * Three values will be passed through a parameterized constructor.
+ */
 import java.util.*;
 public class HighLowDifference 
 {
