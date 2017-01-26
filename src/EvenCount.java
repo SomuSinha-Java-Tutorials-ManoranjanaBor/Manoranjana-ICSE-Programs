@@ -6,37 +6,30 @@
 import java.util.*;
 public class EvenCount
 {
-	public static int evenCount(int n)
-	{   int flag = 0 ;
-		int d;
-	
-	    while(n!=0)
-	    { 	
-	    	d = n % 10 ;
-	    	if((d % 2) == 0)
-	    	{
-	    		flag = 1 ;
-	    	}
-	    	n=n/10;
-	    }
-		return flag;
-	}
-	public static void main(String args[])
-	{ 
-		Scanner in = new Scanner(System.in);
-		System.out.println("ENTER THE NUMBER : ");
-		int n = in.nextInt();
-		int e;int ec=0;
-		
-		while(n!=0)
+	public static void evenCount(int a,int b)
+	{
+		int i,ec=0;
+		for(i=a;i<=b;i++)
 		{
-			e = n % 10 ;
-			if(evenCount(e) == 1 )
+			if((i % 2) == 0)
 			{
 				ec++;
 			}
-			e=n/10;
 		}
-		System.out.println("number of even digits found : "+ec );
+		System.out.println("the number of evens found is : "+ec);
+	}
+	public static void main(String args[])
+	{
+		Scanner in = new Scanner(System.in);
+		System.out.print("ENTER THE STARTING NUMBER : ");
+		int m =in.nextInt();
+		System.out.print("ENTER THE ENDING NUMBER : ");
+		int n =in.nextInt();
+		int i;
+		for(i=m;i<=n;i++)
+		{
+			evenCount(m,n);			
+		}
+		
 	}
 }
