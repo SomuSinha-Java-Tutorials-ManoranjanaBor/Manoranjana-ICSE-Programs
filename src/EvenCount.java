@@ -16,7 +16,7 @@ public class EvenCount
 				ec++;
 			}
 		}
-		System.out.println("the number of evens found is : "+ec);
+		System.out.println("the number of evens found within "+a+"and"+b+" is : "+ec);
 	}
 	public static void main(String args[])
 	{
