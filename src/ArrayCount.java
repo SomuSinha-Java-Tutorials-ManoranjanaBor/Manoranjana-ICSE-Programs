@@ -8,7 +8,6 @@
 import java.util.*;
 public class ArrayCount
 {
-
 	public static int countDigit(int a)
 	{
 		int c=0;
