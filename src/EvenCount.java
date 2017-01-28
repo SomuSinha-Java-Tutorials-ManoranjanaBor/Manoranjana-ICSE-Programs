@@ -25,11 +25,6 @@ public class EvenCount
 		int m =in.nextInt();
 		System.out.print("ENTER THE ENDING NUMBER : ");
 		int n =in.nextInt();
-		int i;
-		for(i=m;i<=n;i++)
-		{
-					
-		}
 		evenCount(m,n);	
 		
 	}
