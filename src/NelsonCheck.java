@@ -22,11 +22,7 @@ public class NelsonCheck
 			while(n>0)
 			{
 				d = n % 10 ;
-				if(r == d)
-				{	
-					continue;
-				}
-				else
+				if(r != d)
 				{
 					flag=1;
 				}	
