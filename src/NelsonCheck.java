@@ -17,23 +17,29 @@ public class NelsonCheck
 		System.out.print("ENTER A NUMBER TO CHECK WHETHER IT IS NELSON OR NOT : ");
 		int n = in.nextInt(),d=0,r=0,flag = 0 ;
 		r = n % 10 ;
-		while((n>0)&&(countDigit(n)>=3))
+		if(countDigit(n)>=3)
 		{
-			d = n % 10 ;
-			if(r == d)
+			while(n>0)
 			{
-				continue;
+				d = n % 10 ;
+				if(r == d)
+				{	
+					continue;
+				}
+				else
+				{
+					flag=1;
+				}	
+				n = n / 10 ;
 			}
+			if(flag == 0)
+				System.out.println("the number is nelson");
 			else
-			{
-				flag=1;
-			}	
-			n = n / 10 ;
-			System.out.print("n = "+n);
+				System.out.println("the number is not nelson");
 		}
-		if(flag == 0)
-			System.out.println("the number is nelson");
 		else
-			System.out.println("the number is not nelson");
+		{
+			System.out.println(" INVALID INPUT ");
+		}
 	}
 }
