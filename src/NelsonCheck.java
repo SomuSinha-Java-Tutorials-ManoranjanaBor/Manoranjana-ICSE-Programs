@@ -15,31 +15,25 @@ public class NelsonCheck
 	{
 		Scanner in = new Scanner (System.in);
 		System.out.print("ENTER A NUMBER TO CHECK WHETHER IT IS NELSON OR NOT : ");
-		int n = in.nextInt(),d=0,r=0,m=0,cc=0,i;
-		int new_num = n ;
+		int n = in.nextInt(),d=0,r=0,flag = 0 ;
+		r = n % 10 ;
 		while((n>0)&&(countDigit(n)>=3))
 		{
 			d = n % 10 ;
-			if(countDigit(n)>=3) 
+			if(r == d)
 			{
-				cc = countDigit(n);
-				
-				for(i = (cc-1);i>=0;i--)
-				{	
-					m = (int) Math.pow (10,(i));
-					r = d*m + r;
-					System.out.println(r+","+m);
-				}
+				continue;
 			}
+			else
+			{
+				flag=1;
+			}	
 			n = n / 10 ;
+			System.out.print("n = "+n);
 		}
-		if((r == new_num)&&(countDigit(r)>=3))
-		{
-			System.out.println("the number is nelson number. "+r+","+new_num);
-		}
+		if(flag == 0)
+			System.out.println("the number is nelson");
 		else
-		{
-			System.out.println("the number is not nelson number. "+r+","+new_num+","+d);
-		}
+			System.out.println("the number is not nelson");
 	}
 }
