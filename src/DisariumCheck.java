@@ -1,4 +1,7 @@
-
+/*
+ * A number will be called DISARIUM if sum of its digits powered with their respective position is
+ * equal to the original number.
+ */
 import java.util.*;
 public class DisariumCheck 
 {
