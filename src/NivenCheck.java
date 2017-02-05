@@ -1,3 +1,7 @@
+/*
+ * Harshad Number also called Niven Number is a number that is divisible by the sum of its digits.
+ *  Example: Number 200 is a Harshad Number because sum of digits 2 and 0 and 0 is 2(2+0+0) and 200 is divisible by 2. 
+ */
 import java.util.*;
 public class NivenCheck 
 {
