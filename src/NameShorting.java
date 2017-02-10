@@ -8,29 +8,44 @@ public class NameShorting
 		
 		String s= in.nextLine(),s1="";
 		char ch=s.charAt(0),ch1;
-		int i,p =s.length(),pos=0;
+		int i=0,p=s.length(),pos=0;
 		
-		for(i=p-1;i>=0;i--)
+		int noWords = (returnLetter(s)).len;
+		char arr[] = (returnLetter(s)).letter;
+		
+		if(noWords>=3)
 		{
-			ch1 =s.charAt(i);
-			
-			if(ch1 == ' ')
-			{
-				pos =i;
-				break;
-			}
-		}
-		System.out.print("the shortened name is : "+ch);
-		for(i=1;i<pos;i++)
+			for(i=0;i<arr.length&&arr[i]!=0;i++)
+				System.out.print(arr[i]+" ");
+		}		
+	}
+	
+	static returnWords returnLetter(String str)
+	{
+		int noWords=0;
+		int pos=0;
+		char arr[]= new char[10];
+		int idx=0;
+		while(pos!=str.length()+1)
 		{
-			ch1 = s.charAt(i);
-			if(ch == ' ')
-			{
-				 System.out.print(s.charAt(i+1));
-				
-			}
+			arr[idx++]=str.charAt(pos);
+			pos=str.indexOf(' ', pos);
+			if(pos==-1)
+				pos=str.length();
+			noWords++;
+			pos++;
 		}
-		
-		
+		return new returnWords(noWords, arr);
+	}
+}
+
+class returnWords 
+{
+	int len;
+	char letter[];
+	returnWords(int a, char b[])
+	{
+		len=a;
+		letter=b;
 	}
 }
