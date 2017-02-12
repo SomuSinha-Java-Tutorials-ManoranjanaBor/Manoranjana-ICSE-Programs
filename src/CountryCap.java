@@ -4,10 +4,10 @@ public class CountryCap
 	public static void main(String args [])
 	{
 		Scanner in = new Scanner (System.in);
-		String coun[] = new String[10];
-		String cap[] = new String[10];
-		int i;
-		for(i = 0 ; i < 10 ; i ++ )
+		String coun[] = new String[2];
+		String cap[] = new String[2];
+		int i,k = 1,a=0;
+		for(i = 0 ; i < 2 ; i ++ )
 		{
 			System.out.print("ENTER THE NAME OF COUNTRY : ");
 			coun[i]=in.nextLine();
@@ -17,16 +17,22 @@ public class CountryCap
 		System.out.print("ENTER THE NAME OF COUNTRY : ");
 		String c = in.nextLine();
 		
-		for(i = 0 ; i < 10 ; i ++ )
+		for(i = 0 ; i < 2 ; i ++ )
 		{
-			if(coun[i]==c)
+			if(coun[i].equalsIgnoreCase(c))
 			{
-				System.out.print("ENTER THE NAME OF THE RESPECTIVE CAPITAL IS : "+cap[i]);				
+				k++;
+				a=i;
+			}
+		}
+			if(k==2)
+			{
+				System.out.print(" THE NAME OF THE RESPECTIVE CAPITAL IS : "+cap[a]);
 			}
 			else
 			{
-				System.out.print("SORRY !!!!!!!!!!!! NOT FOUND ............ ");
+				System.out.print(" not present ");
 			}
-		}
+		
 	}
 }
