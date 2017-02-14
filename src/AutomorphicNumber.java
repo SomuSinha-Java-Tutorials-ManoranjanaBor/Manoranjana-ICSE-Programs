@@ -1,3 +1,7 @@
+/*Java Program to check automorphic number. Write a program in java to accept a number from user and check 
+ * if it is an automorphic number or not. An automorphic number is a number whose square ends in the same digits as the number
+ *  itself. For example, 6 = 36, 5 = 25, 25 = 625 are automorphic numbers.
+ */
 import java.util.*;
 public class AutomorphicNumber 
 {
