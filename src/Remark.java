@@ -3,14 +3,15 @@
  *	ROLL NO , NAME , MARKS OF THREE SUBJECTS, THERE AVERAGE AND PRINT ACCORDINGLY....
  *
  */
-import java.util.*;
+import java.io.*;
 public class Remark 
 {
-	public static void main(String args [])
+	public static void main(String args [])throws IOException
 	{
-		Scanner in = new Scanner(System.in);
+		BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
 		System.out.print(" ENTER THE NUMBER OF STUDENTS : ");
-		int n = in.nextInt() , i;
+		int n = Integer.parseInt(in.readLine()) ;
+		int i;
 		
 		int rno[] =new int[n];
 		String name[] =new String[n];
@@ -22,11 +23,11 @@ public class Remark
 		for(i = 0 ; i < n ; i ++)
 		{
 			System.out.println(" ENTER THE DETAILS OF THE STUDENT : ");
-			rno[i] = in.nextInt() ;
-			name[i] = in.nextLine() ;
-			m1[i] = in.nextInt() ;
-			m2[i] = in.nextInt() ;
-			m3[i] = in.nextInt() ;
+			rno[i] = Integer.parseInt(in.readLine()) ;
+			name[i] = in.readLine() ;
+			m1[i] = Integer.parseInt(in.readLine()) ;
+			m2[i] = Integer.parseInt(in.readLine()) ;
+			m3[i] = Integer.parseInt(in.readLine()) ;
 		}
 		
 		for(i = 0 ; i < n ; i ++)
