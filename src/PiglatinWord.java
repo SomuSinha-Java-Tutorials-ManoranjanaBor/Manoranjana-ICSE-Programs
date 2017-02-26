@@ -1,3 +1,9 @@
+/*	INPUT : LONDON 
+ *	OUTPUT : ONDONLAY
+ *		&
+ *	INPUT : London
+ *	OUTPUT : ONDONLAY
+ */
 import java.util.*;
 public class PiglatinWord 
 {
