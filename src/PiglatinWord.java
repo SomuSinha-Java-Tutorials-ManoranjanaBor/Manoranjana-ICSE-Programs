@@ -28,7 +28,7 @@ public class PiglatinWord
 					System.out.println(s1);
 					
 				}
-			/*	else
+				else
 				{
 					s2 += ch ; 
 				}
@@ -47,7 +47,7 @@ public class PiglatinWord
 				{
 					s2 += ch ; 
 				}
-			}*/
+			}
 		}
 	}
 }
