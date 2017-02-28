@@ -15,10 +15,10 @@ public class EncodeBy2
 			if(ch != ' ')
 			{
 				n = (int) ch ;
-				if(n>=65&&n<=90)
-					x = 65+ (n-65+2)%26;
-				else if(n>=97&&n<=122)
-					x = 97+ (n-97+2)%26;
+				if(n >= 65 && n <= 90)
+					x = 65 + ( n - 65 + 2 ) % 26 ;
+				else if(n >= 97 && n <= 122)
+					x = 97 + ( n - 97 + 2 ) % 26 ;
 				
 				/**
 				 * Character 	:	A	B	C	D	..	X	Y	Z
