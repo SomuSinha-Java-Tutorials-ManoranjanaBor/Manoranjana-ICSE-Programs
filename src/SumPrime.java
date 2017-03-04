@@ -24,7 +24,6 @@ public class SumPrime
 		Scanner in = new Scanner (System.in);
 		int n = 100;
 		int i , sum = 0 ;
-		System.out.println(prime(5));
 		for( i = 1 ; i <= n ; i++)
 		{
 			if(prime(i) == 0 )
