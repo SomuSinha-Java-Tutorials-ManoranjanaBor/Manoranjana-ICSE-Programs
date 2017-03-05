@@ -7,37 +7,32 @@ public class Array1
 {
 	public static void main(String args[])
 	{
-		 int n, c, d, swap;
-		    Scanner in = new Scanner(System.in);
-		 
-		    System.out.println("Input number of integers to sort");
-		    n = in.nextInt();
-		 
-		    int array[] = new int[n];
-		 
-		    System.out.println("Enter " + n + " integers");
-		 
-		    for (c = 0; c < n; c++) 
-		      array[c] = in.nextInt();
-		 
-		    for (c = 0; c < ( n - 1 ); c++) 
-		    {
-		      for (d = 0; d < n - c - 1; d++)
-		      {
-		        if (array[d] > array[d+1]) /* For descending order use < */
-		        {
-		          swap       = array[d];
-		          array[d]   = array[d+1];
-		          array[d+1] = swap;
-		        }
-		      }
-		    }
-		 
-		    System.out.println("Sorted list of numbers");
-		 
-		    for (c = 0; c < n; c++) 
-		      System.out.println(array[c]);
-		    System.out.println("the largest integer : "+array[n-1]);
-		    System.out.println("the smallest integer : "+array[0]);
+		Scanner in=new Scanner(System.in);
+		System.out.println("ENTER THE VALUES IN THE ARRAY : ");
+		int arr[]=new int[10];
+		int i,j,t;
+		
+		for(i=0;i<10;i++)
+		{
+			arr[i]=in.nextInt();
+		}
+		for(i=0;i<9;i++)
+		{
+			for(j=0;j<(9-i);i++)
+			{
+				if(arr[j]>arr[j+1])
+				{
+					t=arr[j];
+					arr[j]=arr[j+1];
+					arr[j+1]=t;
+				}
+			}
+		}
+		for(i=0;i<10;i++)
+		{
+			System.out.println("values are : "+arr[i]);
+		}
+		System.out.println("THE LARGEST INTEGER IN THE GIVEN ARRAY IS : "+arr[9]);
+		System.out.println("THE SMALLEST INTEGER IN THE GIVEN ARRAY IS : "+arr[0]);
 	}
 }
