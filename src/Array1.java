@@ -18,7 +18,7 @@ public class Array1
 		}
 		for(i=0;i<9;i++)
 		{
-			for(j=0;j<(9-i);i++)
+			for(j=0;j<(9-i);j++)
 			{
 				if(arr[j]>arr[j+1])
 				{
